@@ -21,14 +21,14 @@ view: v_bluecrest_ca_ageing {
     label: "Date Created"
   }
 
-  dimension: rec_name {
+  dimension: control_name {
     type: string
-    sql: ${TABLE}.rec_name ;;
+    sql: ${TABLE}.control_name ;;
   }
 
-  dimension: rec_owner {
+  dimension: control_owner {
     type: string
-    sql: ${TABLE}.rec_owner ;;
+    sql: ${TABLE}.control_owner ;;
   }
 
   dimension: unmatch_count {
