@@ -35,7 +35,7 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_column
-      left: 12
+      left: 0
       top: 0
       height: 3
       width: 11
@@ -83,22 +83,22 @@
       conditional_formatting_include_nulls: false
       series_types: {}
       series_labels:
-        v_bluecrest_ca_ageing.sum_settle_amount_usd: Value (USD)
+        v_bluecrest_ca_ageing.sum_unmatched: Value (USD)
         v_bluecrest_ca_ageing.control_name: Name
         v_bluecrest_ca_ageing.control_owner: Owner
         v_bluecrest_ca_ageing.account: Account/PB
       series_colors:
-        Below 4 - 0 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#92c26e"
-        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#eaa153"
-        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#df5555"
-        16 or Above - 3 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#ff0000"
+        Below 4 - 0 - v_bluecrest_ca_ageing.sum_unmatched: "#92c26e"
+        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_unmatched: "#eaa153"
+        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_unmatched: "#df5555"
+        16 or Above - 3 - v_bluecrest_ca_ageing.sum_unmatched: "#ff0000"
       y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: left,
       showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
       type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: Below
-          4, name: Below 4, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: 4
-          to 7, name: 4 to 7, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: 8
-          to 15, name: 8 to 15, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {
-          id: 16 or Above, name: 16 or Above, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}]}]
+          4, name: Below 4, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: 4
+          to 7, name: 4 to 7, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: 8
+          to 15, name: 8 to 15, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {
+          id: 16 or Above, name: 16 or Above, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
 
     - name: break_count_by_age_chart
       title: Detail
@@ -159,7 +159,7 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_column
-      left: 0
+      left: 12
       top: 0
       height: 3
       width: 11
@@ -207,19 +207,19 @@
       conditional_formatting_include_nulls: false
       series_types: {}
       series_labels:
-        v_bluecrest_ca_ageing.sum_unmatched: Count
+        v_bluecrest_ca_ageing.sum_settle_amount_usd: Count
         v_bluecrest_ca_ageing.control_name: Name
         v_bluecrest_ca_ageing.control_owner: Owner
         v_bluecrest_ca_ageing.account: Account/PB
       series_colors:
-        Below 4 - 0 - v_bluecrest_ca_ageing.sum_unmatched: "#92c26e"
-        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_unmatched: "#eaa153"
-        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_unmatched: "#df5555"
-        16 or Above - 3 - v_bluecrest_ca_ageing.sum_unmatched: "#ff0000"
+        Below 4 - 0 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#92c26e"
+        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#eaa153"
+        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#df5555"
+        16 or Above - 3 - v_bluecrest_ca_ageing.sum_settle_amount_usd: "#ff0000"
       y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: left,
       showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
       type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: Below
-          4, name: Below 4, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: 4
-          to 7, name: 4 to 7, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: 8
-          to 15, name: 8 to 15, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {
-          id: 16 or Above, name: 16 or Above, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+          4, name: Below 4, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: 4
+          to 7, name: 4 to 7, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: 8
+          to 15, name: 8 to 15, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {
+          id: 16 or Above, name: 16 or Above, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}]}]
