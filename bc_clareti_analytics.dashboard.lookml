@@ -29,7 +29,71 @@
     field: v_bluecrest_ca_ageing.account
 
   elements:
+
     - name: break_count_by_age_table
+      title: Break Count by Control and Account by Age
+      model: bc_clareti_analytics
+      explore: v_bluecrest_ca_ageing
+      type: looker_column
+      left: 0
+      top: 0
+      height: 3
+      width: 11
+      fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age]
+      pivots: [v_bluecrest_ca_ageing.age]
+      fill_fields: [v_bluecrest_ca_ageing.age]
+      listen:
+        control_name: v_bluecrest_ca_ageing.control_name
+        control_owner: v_bluecrest_ca_ageing.control_owner
+        account: v_bluecrest_ca_ageing.account
+      sorts: [v_bluecrest_ca_ageing.age]
+      limit: 500
+      column_limit: 50
+      total: true
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: false
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: true
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: gray
+      enable_conditional_formatting: true
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      series_types: {}
+      series_labels:
+        v_bluecrest_ca_ageing.sum_unmatched: Count
+        v_bluecrest_ca_ageing.control_name: Name
+        v_bluecrest_ca_ageing.control_owner: Owner
+        v_bluecrest_ca_ageing.account: Account/PB
+      series_colors:
+        Below 4 - 0 - v_bluecrest_ca_ageing.sum_unmatched: "#29fa36"
+        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_unmatched: "#d28819"
+        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_unmatched: "#e61e25"
+        16 or Above - 3 - v_bluecrest_ca_ageing.sum_unmatched: "#9e0c83"
+
+    - name: break_count_by_age_chart
       title: Detail
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
