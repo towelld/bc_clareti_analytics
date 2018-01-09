@@ -6,19 +6,19 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.account ;;
   }
 
+  dimension: age {
+    type: tier
+    tiers: [4,8,16]
+    style: integer
+    sql: DATEDIFF(DAY, ${TABLE}.DateTimeCreated, GETDATE()) ;;
+  }
+
   dimension_group: date_time_created {
     type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
+    timeframes: [date, week, month, time]
     convert_tz: no
-    datatype: date
-    sql: ${TABLE}.date_time_created ;;
+    sql: ${TABLE}.DateTimeCreated ;;
+    label: "Date Created"
   }
 
   dimension: rec_name {
