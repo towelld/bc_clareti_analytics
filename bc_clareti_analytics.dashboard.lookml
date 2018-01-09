@@ -127,10 +127,6 @@
       hide_row_totals: false
       table_theme: gray
       limit_displayed_rows: false
-      enable_conditional_formatting: true
-      conditional_formatting_ignored_fields: []
-      conditional_formatting_include_totals: false
-      conditional_formatting_include_nulls: false
       stacking: ''
       show_value_labels: false
       label_density: 25
@@ -157,8 +153,3 @@
         v_bluecrest_ca_ageing.control_name: Name
         v_bluecrest_ca_ageing.control_owner: Owner
         v_bluecrest_ca_ageing.account: Account/PB
-      conditional_formatting: [{type: greater than, value: 1000,      background_color: "#df5555", font_color: "#000000", bold: false, italic: false, strikethrough: false},
-                               {type: greater than, value:  300,      background_color: "#eaa153", font_color: "#000000", bold: false, italic: false, strikethrough: false},
-                               {type: greater than, value:    0,      background_color: "#92c26e", font_color: "#000000", bold: false, italic: false, strikethrough: false},
-                               {type: 'null',       value: !!null '', background_color: "#92c26e", font_color: "#000000", bold: false, italic: false, strikethrough: false},
-                              ]
