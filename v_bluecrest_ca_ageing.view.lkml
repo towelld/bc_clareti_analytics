@@ -10,14 +10,14 @@ view: v_bluecrest_ca_ageing {
     type: tier
     tiers: [4,8,16]
     style: integer
-    sql: DATEDIFF(DAY, ${TABLE}.DateTimeCreated, GETDATE()) ;;
+    sql: DATEDIFF(DAY, ${TABLE}.date_time_created, GETDATE()) ;;
   }
 
   dimension_group: date_time_created {
     type: time
     timeframes: [date, week, month, time]
     convert_tz: no
-    sql: ${TABLE}.DateTimeCreated ;;
+    sql: ${TABLE}.date_time_created ;;
     label: "Date Created"
   }
 
