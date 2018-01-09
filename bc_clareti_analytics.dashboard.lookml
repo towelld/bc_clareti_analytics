@@ -86,7 +86,8 @@
         v_bluecrest_ca_ageing.control_name: Name
         v_bluecrest_ca_ageing.control_owner: Owner
         v_bluecrest_ca_ageing.account: Account/PB
-      conditional_formatting: [{type: greater than, value: 1000, background_color: !!null '',font_color: "#df5555", bold: true, italic: false, strikethrough: false},
-                               {type: greater than, value:  300, background_color: !!null '',font_color: "#eaa153", bold: true, italic: false, strikethrough: false},
-                               {type: greater than, value:    0, background_color: !!null '',font_color: "#92c26e", bold: true, italic: false, strikethrough: false},
+      conditional_formatting: [{type: greater than, value: 1000,      background_color: "#df5555", font_color: "#000000", bold: true, italic: false, strikethrough: false},
+                               {type: greater than, value:  300,      background_color: "#eaa153", font_color: "#000000", bold: true, italic: false, strikethrough: false},
+                               {type: greater than, value:    0,      background_color: "#92c26e", font_color: "#000000", bold: true, italic: false, strikethrough: false},
+                               {type: 'null',       value: !!null '', background_color: "#92c26e", font_color: "#000000", bold: true, italic: false, strikethrough: false},
                               ]
