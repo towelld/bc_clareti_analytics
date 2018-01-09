@@ -39,14 +39,14 @@
       top: 0
       height: 3
       width: 11
-      fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age]
-      pivots: [v_bluecrest_ca_ageing.age]
-      fill_fields: [v_bluecrest_ca_ageing.age]
+      fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age_created]
+      pivots: [v_bluecrest_ca_ageing.age_created]
+      fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
-      sorts: [v_bluecrest_ca_ageing.age]
+      sorts: [v_bluecrest_ca_ageing.age_created]
       limit: 500
       column_limit: 50
       total: true
@@ -110,14 +110,14 @@
       height: 6
       width: 11
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
-        v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age, v_bluecrest_ca_ageing.sum_unmatched]
-      pivots: [v_bluecrest_ca_ageing.age]
-      fill_fields: [v_bluecrest_ca_ageing.age]
+        v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_unmatched]
+      pivots: [v_bluecrest_ca_ageing.age_created]
+      fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
-      sorts: [v_bluecrest_ca_ageing.age, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
+      sorts: [v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
       limit: 500
       total: true
       show_view_names: false
@@ -163,14 +163,14 @@
       top: 0
       height: 3
       width: 11
-      fields: [v_bluecrest_ca_ageing.sum_settle_amount_usd, v_bluecrest_ca_ageing.age]
-      pivots: [v_bluecrest_ca_ageing.age]
-      fill_fields: [v_bluecrest_ca_ageing.age]
+      fields: [v_bluecrest_ca_ageing.sum_settle_amount_usd, v_bluecrest_ca_ageing.age_created]
+      pivots: [v_bluecrest_ca_ageing.age_created]
+      fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
-      sorts: [v_bluecrest_ca_ageing.age]
+      sorts: [v_bluecrest_ca_ageing.age_created]
       limit: 500
       column_limit: 50
       total: true
@@ -234,14 +234,14 @@
       height: 6
       width: 11
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
-        v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age, v_bluecrest_ca_ageing.sum_settle_amount_usd]
-      pivots: [v_bluecrest_ca_ageing.age]
-      fill_fields: [v_bluecrest_ca_ageing.age]
+        v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_settle_amount_usd]
+      pivots: [v_bluecrest_ca_ageing.age_created]
+      fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
-      sorts: [v_bluecrest_ca_ageing.age, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
+      sorts: [v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
       limit: 500
       total: true
       show_view_names: false
