@@ -30,7 +30,7 @@
 
   elements:
 
-    - name: break_count_by_age_table
+    - name: break_count_by_age_chart
       title: Break Count by Control and Account by Age
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
@@ -39,7 +39,7 @@
       top: 0
       height: 3
       width: 11
-      fields: [v_bluecrest_ca_ageing.sum_settle_amount_usd, v_bluecrest_ca_ageing.age]
+      fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age]
       pivots: [v_bluecrest_ca_ageing.age]
       fill_fields: [v_bluecrest_ca_ageing.age]
       listen:
@@ -100,7 +100,7 @@
           to 15, name: 8 to 15, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {
           id: 16 or Above, name: 16 or Above, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
 
-    - name: break_count_by_age_chart
+    - name: break_count_by_age_table
       title: Detail
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
@@ -154,7 +154,7 @@
         v_bluecrest_ca_ageing.control_owner: Owner
         v_bluecrest_ca_ageing.account: Account/PB
 
-    - name: break_value_by_age_table
+    - name: break_value_by_age_chart
       title: Break Value (USD) by Control and Account by Age
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
@@ -163,7 +163,7 @@
       top: 0
       height: 3
       width: 11
-      fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age]
+      fields: [v_bluecrest_ca_ageing.sum_settle_amount_usd, v_bluecrest_ca_ageing.age]
       pivots: [v_bluecrest_ca_ageing.age]
       fill_fields: [v_bluecrest_ca_ageing.age]
       listen:
