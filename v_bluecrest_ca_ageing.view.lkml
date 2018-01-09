@@ -33,12 +33,12 @@ view: v_bluecrest_ca_ageing {
 
   dimension: unmatch_count {
     type: number
-    sql: ${TABLE}.unmatch_count ;;
+    sql: coalesce(${TABLE}.unmatch_count,0) ;;
   }
 
   measure: sum_unmatched {
     type: sum
-    sql: coalesce(${unmatch_count},0) ;;
+    sql: ${unmatch_count} ;;
     value_format: "#,##0"
   }
 }
