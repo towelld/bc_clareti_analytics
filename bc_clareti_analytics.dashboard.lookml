@@ -88,8 +88,8 @@
         v_bluecrest_ca_ageing.account: Account/PB
       conditional_formatting: [{type: high to low, value: !!null '',
                                 background_color: !!null '',
-                                font_color: !!null '',
-                                palette: {name: Custom, colors: ["#df5555", "#eaa153", "#92c26e"]},
+                                font_color: {name: Custom, colors: ["#df5555", "#eaa153", "#92c26e"]},
+                                palette: !!null '',
                                 bold: false,
                                 italic: false,
                                 strikethrough: false
