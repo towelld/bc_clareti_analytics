@@ -92,6 +92,13 @@
         4 to 7 - 1 - v_bluecrest_ca_ageing.sum_unmatched: "#eaa153"
         8 to 15 - 2 - v_bluecrest_ca_ageing.sum_unmatched: "#df5555"
         16 or Above - 3 - v_bluecrest_ca_ageing.sum_unmatched: "#ff0000"
+      y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: left,
+      showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
+      type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: Below
+          4, name: Below 4, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: 4
+          to 7, name: 4 to 7, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: 8
+          to 15, name: 8 to 15, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {
+          id: 16 or Above, name: 16 or Above, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
 
     - name: break_count_by_age_chart
       title: Detail
