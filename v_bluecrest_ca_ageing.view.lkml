@@ -38,7 +38,7 @@ view: v_bluecrest_ca_ageing {
 
   measure: sum_unmatched {
     type: sum
-    sql: case ${unmatch_count} when null then 0 else ${unmatch_count} end ;;
+    sql: coalesce(${unmatch_count},0) ;;
     value_format: "#,##0"
   }
 }
