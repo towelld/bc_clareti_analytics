@@ -284,7 +284,7 @@
       explore: v_bluecrest_ca_ageing
       type: looker_column
       left: 0
-      top: 12
+      top: 9
       height: 3
       width: 11
       fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age_settle]
@@ -338,10 +338,11 @@
         v_bluecrest_ca_ageing.control_owner: Owner
         v_bluecrest_ca_ageing.account: Account/PB
       series_colors:
-        Below 4 - 0 - v_bluecrest_ca_ageing.sum_unmatched: "#92c26e"
-        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_unmatched: "#eaa153"
-        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_unmatched: "#df5555"
-        16 or Above - 3 - v_bluecrest_ca_ageing.sum_unmatched: "#ff0000"
+        Below 0 - 0 - records.count: "#ff0000"
+        0 to 3 - 1 - records.count: "#df5555"
+        4 to 7 - 2 - records.count: "#eaa153"
+        8 to 15 - 3 - records.count: "#92c26e"
+        16 or Above - 4 - records.count: "#646569"
       y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: left,
       showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
       type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: Below
