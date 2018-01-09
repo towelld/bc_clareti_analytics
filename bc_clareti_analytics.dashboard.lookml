@@ -107,7 +107,7 @@
       type: table
       left: 0
       top: 3
-      height: 5
+      height: 6
       width: 11
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_unmatched]
@@ -231,7 +231,7 @@
       type: table
       left: 12
       top: 3
-      height: 5
+      height: 6
       width: 11
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_settle_amount_usd]
@@ -358,7 +358,7 @@
       type: table
       left: 0
       top: 12
-      height: 3
+      height: 6
       width: 11
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.sum_unmatched]
