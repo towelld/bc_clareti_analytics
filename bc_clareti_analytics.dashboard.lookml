@@ -107,7 +107,7 @@
       type: table
       left: 0
       top: 3
-      height: 6
+      height: 5
       width: 11
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_unmatched]
@@ -231,7 +231,7 @@
       type: table
       left: 12
       top: 3
-      height: 6
+      height: 5
       width: 11
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_settle_amount_usd]
@@ -350,3 +350,59 @@
           to 7, name: 4 to 7, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: 8
           to 15, name: 8 to 15, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {
           id: 16 or Above, name: 16 or Above, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+
+    - name: break_count_by_settle_table
+      title: Detail
+      model: bc_clareti_analytics
+      explore: v_bluecrest_ca_ageing
+      type: table
+      left: 0
+      top: 12
+      height: 3
+      width: 11
+      fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
+        v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.sum_unmatched]
+      pivots: [v_bluecrest_ca_ageing.age_settle]
+      fill_fields: [v_bluecrest_ca_ageing.age_settle]
+      filters:
+        v_bluecrest_ca_ageing.control_type: Transactions
+      listen:
+        control_name: v_bluecrest_ca_ageing.control_name
+        control_owner: v_bluecrest_ca_ageing.control_owner
+        account: v_bluecrest_ca_ageing.account
+      sorts: [v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
+      limit: 500
+      total: true
+      show_view_names: false
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: gray
+      limit_displayed_rows: false
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: true
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      series_labels:
+        v_bluecrest_ca_ageing.sum_unmatched: Count
+        v_bluecrest_ca_ageing.control_name: Name
+        v_bluecrest_ca_ageing.control_owner: Owner
+        v_bluecrest_ca_ageing.account: Account/PB
