@@ -56,14 +56,14 @@ view: v_bluecrest_ca_ageing {
     value_format: "#,##0"
   }
 
-  measure: sum_settle_amt {
+  measure: sum_settle_amount {
     type: sum
     sql: ${settle_amount};;
     value_format: "#,##0.00"
     label: "Settle Amount"
   }
 
-  measure: sum_settle_amt_usd {
+  measure: sum_settle_amount_usd {
     type: sum
     sql: ${settle_amount_usd};;
     value_format: "$#,##0.00"
