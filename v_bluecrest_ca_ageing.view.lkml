@@ -31,6 +31,11 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.control_owner ;;
   }
 
+  dimension: control_type {
+    type: string
+    sql: ${TABLE}.control_type ;;
+  }
+
   dimension: settle_amount {
     type: number
     sql: ${TABLE}.settle_amount_money ;;
@@ -43,6 +48,14 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.settle_amount_usd ;;
     label: "Settle Amount (USD)"
     value_format: "#,##0.00"
+  }
+
+  dimension_group: settle_date {
+    type: time
+    timeframes: [date, week, month, time]
+    convert_tz: no
+    sql: ${TABLE}.settle_date ;;
+    label: "Settlement Date"
   }
 
   dimension: unmatch_count {
