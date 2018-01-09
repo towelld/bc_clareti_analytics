@@ -88,10 +88,10 @@
         v_bluecrest_ca_ageing.control_owner: Owner
         v_bluecrest_ca_ageing.account: Account/PB
       series_colors:
-        Below 4 - 0 - v_bluecrest_ca_ageing.sum_unmatched: "#29fa36"
-        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_unmatched: "#d28819"
-        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_unmatched: "#e61e25"
-        16 or Above - 3 - v_bluecrest_ca_ageing.sum_unmatched: "#9e0c83"
+        Below 4 - 0 - v_bluecrest_ca_ageing.sum_unmatched: "#92c26e"
+        4 to 7 - 1 - v_bluecrest_ca_ageing.sum_unmatched: "#eaa153"
+        8 to 15 - 2 - v_bluecrest_ca_ageing.sum_unmatched: "#df5555"
+        16 or Above - 3 - v_bluecrest_ca_ageing.sum_unmatched: "#ff0000"
 
     - name: break_count_by_age_chart
       title: Detail
