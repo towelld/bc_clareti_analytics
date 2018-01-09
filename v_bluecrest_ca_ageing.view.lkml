@@ -31,9 +31,23 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.control_owner ;;
   }
 
+  dimension: settle_amount {
+    type: number
+    sql: ${TABLE}.settle_amount_money ;;
+    label: "Settle Amount"
+    value_format: "#,##0.00"
+  }
+
+  dimension: settle_amount_usd {
+    type: number
+    sql: ${TABLE}.settle_amount_usd ;;
+    label: "Settle Amount (USD)"
+    value_format: "#,##0.00"
+  }
+
   dimension: unmatch_count {
     type: number
-    sql: coalesce(${TABLE}.unmatch_count,0) ;;
+    sql: ${TABLE}.unmatch_count ;;
   }
 
   measure: sum_unmatched {
@@ -41,4 +55,19 @@ view: v_bluecrest_ca_ageing {
     sql: ${unmatch_count} ;;
     value_format: "#,##0"
   }
+
+  measure: sum_settle_amt {
+    type: sum
+    sql: ${settle_amount};;
+    value_format: "#,##0.00"
+    label: "Settle Amount"
+  }
+
+  measure: sum_settle_amt_usd {
+    type: sum
+    sql: ${settle_amount_usd};;
+    value_format: "$#,##0.00"
+    label: "Settle Amount (USD)"
+  }
+
 }
