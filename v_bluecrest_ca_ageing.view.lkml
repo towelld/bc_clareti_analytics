@@ -36,8 +36,9 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.unmatch_count ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: [rec_name]
+  measure: sum_unmatched {
+    type: sum
+    sql: ${unmatch_count};;
+    value_format: "#,##0"
   }
 }
