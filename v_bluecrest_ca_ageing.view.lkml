@@ -74,6 +74,7 @@ view: v_bluecrest_ca_ageing {
     type: sum
     sql: ${unmatch_count} ;;
     value_format: "#,##0"
+    drill_fields: [record*]
   }
 
   measure: sum_settle_amount {
@@ -81,6 +82,7 @@ view: v_bluecrest_ca_ageing {
     sql: ${settle_amount};;
     value_format: "#,##0.00"
     label: "Settle Amount"
+    drill_fields: [record*]
   }
 
   measure: sum_settle_amount_usd {
@@ -88,6 +90,21 @@ view: v_bluecrest_ca_ageing {
     sql: ${settle_amount_usd};;
     value_format: "$#,##0.00"
     label: "Settle Amount (USD)"
+    drill_fields: [record*]
   }
 
+  set: record {
+    fields: [
+      control_type,
+      control_name,
+      control_owner,
+      account,
+      date_time_created_date,
+      age_created,
+      settle_date_date,
+      age_settle,
+      unmatch_count,
+      settle_amount_usd
+    ]
+  }
 }
