@@ -51,7 +51,7 @@
       column_limit: 50
       total: true
       stacking: ''
-      show_value_labels: false
+      show_value_labels: true
       label_density: 25
       legend_position: center
       x_axis_gridlines: false
