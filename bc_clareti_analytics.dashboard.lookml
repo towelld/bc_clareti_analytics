@@ -38,7 +38,7 @@
       left: 0
       top: 0
       height: 4
-      width: 6
+      width: 8
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
@@ -88,10 +88,10 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_pie
-      left: 6
+      left: 8
       top: 0
       height: 4
-      width: 6
+      width: 4
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
@@ -145,7 +145,7 @@
       left: 12
       top: 0
       height: 4
-      width: 6
+      width: 8
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
@@ -197,10 +197,10 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_pie
-      left: 18
+      left: 20
       top: 0
       height: 4
-      width: 6
+      width: 4
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
