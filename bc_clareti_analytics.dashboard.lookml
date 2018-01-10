@@ -336,6 +336,7 @@
       sorts: [v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
       limit: 500
       total: true
+      row_total: right
       show_view_names: false
       show_row_numbers: false
       truncate_column_names: false
@@ -460,6 +461,7 @@
       sorts: [v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
       limit: 500
       total: true
+      row_total: right
       show_view_names: false
       show_row_numbers: false
       truncate_column_names: false
@@ -589,6 +591,7 @@
       sorts: [v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
       limit: 500
       total: true
+      row_total: right
       show_view_names: false
       show_row_numbers: false
       truncate_column_names: false
@@ -718,6 +721,7 @@
       sorts: [v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner, v_bluecrest_ca_ageing.account]
       limit: 500
       total: true
+      row_total: right
       show_view_names: false
       show_row_numbers: false
       truncate_column_names: false
