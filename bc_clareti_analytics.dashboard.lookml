@@ -99,7 +99,7 @@
       fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.account]
       sorts: [v_bluecrest_ca_ageing.account]
       limit: 500
-      value_labels: legend
+      value_labels: none
       label_type: labPer
       stacking: ''
       show_value_labels: false
@@ -208,7 +208,7 @@
       fields: [v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.sum_settle_amount_usd]
       sorts: [v_bluecrest_ca_ageing.account]
       limit: 500
-      value_labels: legend
+      value_labels: none
       label_type: labPer
       stacking: ''
       show_value_labels: false
