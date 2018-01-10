@@ -631,7 +631,7 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_column
-      left: 9
+      left: 10
       top: 13
       height: 3
       width: 13
