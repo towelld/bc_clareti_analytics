@@ -102,7 +102,7 @@ view: v_bluecrest_ca_ageing {
   measure: percent_settle_amount_usd {
     type: percent_of_total
     sql: ${sum_settle_amount_usd};;
-    value_format: "$#,##0.00"
+    value_format: "#,##0.00"
     label: "Settle Amount (USD)"
     drill_fields: [record*]
   }
