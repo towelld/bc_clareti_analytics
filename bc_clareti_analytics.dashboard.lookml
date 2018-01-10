@@ -30,7 +30,7 @@
 
   elements:
 
-    - name: unmatched_bar
+    - name: unmatched_count_bar
       title: Unmatched Count
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
@@ -47,6 +47,169 @@
       pivots: [v_bluecrest_ca_ageing.account]
       sorts: [v_bluecrest_ca_ageing.account]
       limit: 500
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      hide_legend: false
+      y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
+          showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
+          type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: BCAPLN,
+              name: BCAPLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: BNPPNY,
+              name: BNPPNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CITILN,
+              name: CITILN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CSFBEU,
+              name: CSFBEU, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: JPYENNY,
+              name: JPYENNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MLILLN,
+              name: MLILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MSILLN,
+              name: MSILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: SOCGLN,
+              name: SOCGLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+
+    - name: unmatched_count_pie
+      title: Percentage
+      model: bc_clareti_analytics
+      explore: v_bluecrest_ca_ageing
+      type: looker_pie
+      left: 6
+      top: 0
+      height: 4
+      width: 6
+      listen:
+        control_name: v_bluecrest_ca_ageing.control_name
+        control_owner: v_bluecrest_ca_ageing.control_owner
+        account: v_bluecrest_ca_ageing.account
+      fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.account]
+      sorts: [v_bluecrest_ca_ageing.account]
+      limit: 500
+      value_labels: legend
+      label_type: labPer
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      hide_legend: false
+      y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
+          showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
+          type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: BCAPLN,
+              name: BCAPLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: BNPPNY,
+              name: BNPPNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CITILN,
+              name: CITILN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CSFBEU,
+              name: CSFBEU, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: JPYENNY,
+              name: JPYENNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MLILLN,
+              name: MLILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MSILLN,
+              name: MSILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: SOCGLN,
+              name: SOCGLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+
+    - name: unmatched_value_bar
+      title: Unmatched Value (USD)
+      model: bc_clareti_analytics
+      explore: v_bluecrest_ca_ageing
+      type: looker_bar
+      left: 12
+      top: 0
+      height: 4
+      width: 6
+      listen:
+        control_name: v_bluecrest_ca_ageing.control_name
+        control_owner: v_bluecrest_ca_ageing.control_owner
+        account: v_bluecrest_ca_ageing.account
+      fields: [v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.sum_settle_amount_usd]
+      pivots: [v_bluecrest_ca_ageing.account]
+      sorts: [v_bluecrest_ca_ageing.account]
+      limit: 500
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      value_labels: legend
+      label_type: labPer
+      series_types: {}
+      hide_legend: false
+      y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
+          showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
+          type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: BCAPLN,
+              name: BCAPLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: BNPPNY,
+              name: BNPPNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CITILN,
+              name: CITILN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CSFBEU,
+              name: CSFBEU, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: JPYENNY,
+              name: JPYENNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MLILLN,
+              name: MLILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MSILLN,
+              name: MSILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: SOCGLN,
+              name: SOCGLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+
+    - name: unmatched_value_pie
+      title: Percentage
+      model: bc_clareti_analytics
+      explore: v_bluecrest_ca_ageing
+      type: looker_pie
+      left: 18
+      top: 0
+      height: 4
+      width: 6
+      listen:
+        control_name: v_bluecrest_ca_ageing.control_name
+        control_owner: v_bluecrest_ca_ageing.control_owner
+        account: v_bluecrest_ca_ageing.account
+      fields: [v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.sum_settle_amount_usd]
+      sorts: [v_bluecrest_ca_ageing.account]
+      limit: 500
+      value_labels: legend
+      label_type: labPer
       stacking: ''
       show_value_labels: false
       label_density: 25
