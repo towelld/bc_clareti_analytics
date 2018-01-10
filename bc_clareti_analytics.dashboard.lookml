@@ -96,7 +96,7 @@
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
-      fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.account]
+      fields: [v_bluecrest_ca_ageing.percent_unmatched, v_bluecrest_ca_ageing.account]
       sorts: [v_bluecrest_ca_ageing.account]
       limit: 500
       value_labels: none
@@ -128,14 +128,14 @@
       y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
           showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
           type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: BCAPLN,
-              name: BCAPLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: BNPPNY,
-              name: BNPPNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CITILN,
-              name: CITILN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CSFBEU,
-              name: CSFBEU, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: JPYENNY,
-              name: JPYENNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MLILLN,
-              name: MLILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MSILLN,
-              name: MSILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: SOCGLN,
-              name: SOCGLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+              name: BCAPLN, axisId: v_bluecrest_ca_ageing.percent_unmatched}, {id: BNPPNY,
+              name: BNPPNY, axisId: v_bluecrest_ca_ageing.percent_unmatched}, {id: CITILN,
+              name: CITILN, axisId: v_bluecrest_ca_ageing.percent_unmatched}, {id: CSFBEU,
+              name: CSFBEU, axisId: v_bluecrest_ca_ageing.percent_unmatched}, {id: JPYENNY,
+              name: JPYENNY, axisId: v_bluecrest_ca_ageing.percent_unmatched}, {id: MLILLN,
+              name: MLILLN, axisId: v_bluecrest_ca_ageing.percent_unmatched}, {id: MSILLN,
+              name: MSILLN, axisId: v_bluecrest_ca_ageing.percent_unmatched}, {id: SOCGLN,
+              name: SOCGLN, axisId: v_bluecrest_ca_ageing.percent_unmatched}]}]
 
     - name: unmatched_value_bar
       title: Unmatched Value (USD)
@@ -183,14 +183,14 @@
       y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
           showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
           type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: BCAPLN,
-              name: BCAPLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: BNPPNY,
-              name: BNPPNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CITILN,
-              name: CITILN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CSFBEU,
-              name: CSFBEU, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: JPYENNY,
-              name: JPYENNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MLILLN,
-              name: MLILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MSILLN,
-              name: MSILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: SOCGLN,
-              name: SOCGLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+              name: BCAPLN, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: BNPPNY,
+              name: BNPPNY, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: CITILN,
+              name: CITILN, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: CSFBEU,
+              name: CSFBEU, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: JPYENNY,
+              name: JPYENNY, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: MLILLN,
+              name: MLILLN, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: MSILLN,
+              name: MSILLN, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}, {id: SOCGLN,
+              name: SOCGLN, axisId: v_bluecrest_ca_ageing.sum_settle_amount_usd}]}]
 
     - name: unmatched_value_pie
       title: Percentage
@@ -205,7 +205,7 @@
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
-      fields: [v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.sum_settle_amount_usd]
+      fields: [v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.percent_settle_amount_usd]
       sorts: [v_bluecrest_ca_ageing.account]
       limit: 500
       value_labels: none
@@ -237,14 +237,14 @@
       y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
           showLabels: false, showValues: true, tickDensity: default, tickDensityCustom: 5,
           type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: BCAPLN,
-              name: BCAPLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: BNPPNY,
-              name: BNPPNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CITILN,
-              name: CITILN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: CSFBEU,
-              name: CSFBEU, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: JPYENNY,
-              name: JPYENNY, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MLILLN,
-              name: MLILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: MSILLN,
-              name: MSILLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}, {id: SOCGLN,
-              name: SOCGLN, axisId: v_bluecrest_ca_ageing.sum_unmatched}]}]
+              name: BCAPLN, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}, {id: BNPPNY,
+              name: BNPPNY, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}, {id: CITILN,
+              name: CITILN, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}, {id: CSFBEU,
+              name: CSFBEU, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}, {id: JPYENNY,
+              name: JPYENNY, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}, {id: MLILLN,
+              name: MLILLN, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}, {id: MSILLN,
+              name: MSILLN, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}, {id: SOCGLN,
+              name: SOCGLN, axisId: v_bluecrest_ca_ageing.percent_settle_amount_usd}]}]
 
     - name: break_count_by_age_chart
       title: Break Count by Control and Account by Age

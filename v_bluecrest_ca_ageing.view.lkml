@@ -77,6 +77,12 @@ view: v_bluecrest_ca_ageing {
     drill_fields: [record*]
   }
 
+  measure: percent_unmatched {
+    type: percent_of_total
+    sql: ${sum_unmatched};;
+    drill_fields: [record*]
+  }
+
   measure: sum_settle_amount {
     type: sum
     sql: ${settle_amount};;
@@ -87,6 +93,14 @@ view: v_bluecrest_ca_ageing {
 
   measure: sum_settle_amount_usd {
     type: sum
+    sql: ${settle_amount_usd};;
+    value_format: "$#,##0.00"
+    label: "Settle Amount (USD)"
+    drill_fields: [record*]
+  }
+
+  measure: percent_settle_amount_usd {
+    type: percent_of_total
     sql: ${settle_amount_usd};;
     value_format: "$#,##0.00"
     label: "Settle Amount (USD)"
