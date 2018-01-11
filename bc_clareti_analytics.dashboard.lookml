@@ -38,7 +38,7 @@
       left: 0
       top: 0
       height: 4
-      width: 8
+      width: 9
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
@@ -88,7 +88,7 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_pie
-      left: 8
+      left: 9
       top: 0
       height: 4
       width: 5
@@ -142,10 +142,10 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_bar
-      left: 14
+      left: 15
       top: 0
       height: 4
-      width: 8
+      width: 9
       listen:
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
@@ -197,7 +197,7 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_pie
-      left: 22
+      left: 24
       top: 0
       height: 4
       width: 5
@@ -254,7 +254,7 @@
       left: 0
       top: 4
       height: 3
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age_created]
       pivots: [v_bluecrest_ca_ageing.age_created]
       fill_fields: [v_bluecrest_ca_ageing.age_created]
@@ -324,7 +324,7 @@
       left: 0
       top: 7
       height: 6
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_unmatched]
       pivots: [v_bluecrest_ca_ageing.age_created]
@@ -376,10 +376,10 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_column
-      left: 14
+      left: 15
       top: 4
       height: 3
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.sum_settle_amount_usd, v_bluecrest_ca_ageing.age_created]
       pivots: [v_bluecrest_ca_ageing.age_created]
       fill_fields: [v_bluecrest_ca_ageing.age_created]
@@ -446,10 +446,10 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: table
-      left: 14
+      left: 15
       top: 7
       height: 6
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_settle_amount_usd]
       pivots: [v_bluecrest_ca_ageing.age_created]
@@ -504,7 +504,7 @@
       left: 0
       top: 13
       height: 3
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age_settle]
       pivots: [v_bluecrest_ca_ageing.age_settle]
       fill_fields: [v_bluecrest_ca_ageing.age_settle]
@@ -577,7 +577,7 @@
       left: 0
       top: 16
       height: 6
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.sum_unmatched]
       pivots: [v_bluecrest_ca_ageing.age_settle]
@@ -631,10 +631,10 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: looker_column
-      left: 14
+      left: 15
       top: 13
       height: 3
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.sum_settle_amount_usd, v_bluecrest_ca_ageing.age_settle]
       pivots: [v_bluecrest_ca_ageing.age_settle]
       fill_fields: [v_bluecrest_ca_ageing.age_settle]
@@ -704,10 +704,10 @@
       model: bc_clareti_analytics
       explore: v_bluecrest_ca_ageing
       type: table
-      left: 14
+      left: 15
       top: 16
       height: 6
-      width: 13
+      width: 14
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.sum_settle_amount_usd]
       pivots: [v_bluecrest_ca_ageing.age_settle]
