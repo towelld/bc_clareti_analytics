@@ -504,7 +504,7 @@
       left: 0
       top: 13
       height: 3
-      width: 9
+      width: 10
       fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age_settle]
       pivots: [v_bluecrest_ca_ageing.age_settle]
       fill_fields: [v_bluecrest_ca_ageing.age_settle]
