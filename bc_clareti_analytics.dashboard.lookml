@@ -324,7 +324,7 @@
       left: 0
       top: 7
       height: 6
-      width: 9
+      width: 10
       fields: [v_bluecrest_ca_ageing.control_name, v_bluecrest_ca_ageing.control_owner,
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_created, v_bluecrest_ca_ageing.sum_unmatched]
       pivots: [v_bluecrest_ca_ageing.age_created]
