@@ -1,7 +1,7 @@
 - dashboard: bc_clareti_analytics
   title: Clareti Analytics
   layout: static
-  width: 1632
+  width: 2040
   tile_size: 68
   embed_style:
     background_color: "#ffffff"
