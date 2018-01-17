@@ -43,6 +43,11 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.control_type ;;
   }
 
+  dimension: isin {
+    type: string
+    sql: ${TABLE}.isin ;;
+  }
+
   dimension: settle_amount {
     type: number
     sql: ${TABLE}.settle_amount_money ;;
@@ -113,6 +118,7 @@ view: v_bluecrest_ca_ageing {
       control_name,
       control_owner,
       account,
+      isin,
       date_time_created_date,
       age_created,
       settle_date_date,

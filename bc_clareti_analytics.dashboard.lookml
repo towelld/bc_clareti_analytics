@@ -12,6 +12,11 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: control_type
+    type: field_filter
+    model: bc_clareti_analytics
+    explore: v_bluecrest_ca_ageing
+    field: v_bluecrest_ca_ageing.control_type
   - name: control_name
     type: field_filter
     model: bc_clareti_analytics
@@ -40,6 +45,7 @@
       height: 4
       width: 9
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -93,6 +99,7 @@
       height: 4
       width: 5
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -147,6 +154,7 @@
       height: 4
       width: 9
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -202,6 +210,7 @@
       height: 4
       width: 5
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -259,6 +268,7 @@
       pivots: [v_bluecrest_ca_ageing.age_created]
       fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -330,6 +340,7 @@
       pivots: [v_bluecrest_ca_ageing.age_created]
       fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -384,6 +395,7 @@
       pivots: [v_bluecrest_ca_ageing.age_created]
       fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -455,6 +467,7 @@
       pivots: [v_bluecrest_ca_ageing.age_created]
       fill_fields: [v_bluecrest_ca_ageing.age_created]
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
