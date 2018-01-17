@@ -53,6 +53,11 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.settle_amount_money ;;
     label: "Settle Amount"
     value_format: "#,##0.00"
+    html: {% if v_bluecrest_ca_ageing.settle_amount._value < 0 %}
+            <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+            <font color="#000000">{{ rendered_value }}</font>
+          {% endif %} ;;
   }
 
   dimension: settle_amount_usd {
@@ -60,6 +65,11 @@ view: v_bluecrest_ca_ageing {
     sql: ${TABLE}.settle_amount_usd ;;
     label: "Settle Amount (USD)"
     value_format: "#,##0.00"
+    html: {% if v_bluecrest_ca_ageing.settle_amount_usd._value < 0 %}
+            <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+            <font color="#000000">{{ rendered_value }}</font>
+          {% endif %} ;;
   }
 
   dimension_group: settle_date {
