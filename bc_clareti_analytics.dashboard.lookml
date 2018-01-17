@@ -521,9 +521,8 @@
       fields: [v_bluecrest_ca_ageing.sum_unmatched, v_bluecrest_ca_ageing.age_settle]
       pivots: [v_bluecrest_ca_ageing.age_settle]
       fill_fields: [v_bluecrest_ca_ageing.age_settle]
-      filters:
-        v_bluecrest_ca_ageing.control_type: Transactions
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -595,9 +594,8 @@
         v_bluecrest_ca_ageing.account, v_bluecrest_ca_ageing.age_settle, v_bluecrest_ca_ageing.sum_unmatched]
       pivots: [v_bluecrest_ca_ageing.age_settle]
       fill_fields: [v_bluecrest_ca_ageing.age_settle]
-      filters:
-        v_bluecrest_ca_ageing.control_type: Transactions
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
@@ -651,9 +649,8 @@
       fields: [v_bluecrest_ca_ageing.sum_settle_amount_usd, v_bluecrest_ca_ageing.age_settle]
       pivots: [v_bluecrest_ca_ageing.age_settle]
       fill_fields: [v_bluecrest_ca_ageing.age_settle]
-      filters:
-        v_bluecrest_ca_ageing.control_type: Transactions
       listen:
+        control_type: v_bluecrest_ca_ageing.control_type
         control_name: v_bluecrest_ca_ageing.control_name
         control_owner: v_bluecrest_ca_ageing.control_owner
         account: v_bluecrest_ca_ageing.account
