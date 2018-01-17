@@ -64,7 +64,7 @@ view: v_bluecrest_ca_ageing {
     type: number
     sql: ${TABLE}.settle_amount_usd ;;
     label: "Settle Amount (USD)"
-    value_format: "#,##0.00"
+    value_format: "$#,##0.00"
     html: {% if v_bluecrest_ca_ageing.settle_amount_usd._value < 0 %}
             <font color="#df5555">{{ rendered_value }}</font>
           {% else %}
