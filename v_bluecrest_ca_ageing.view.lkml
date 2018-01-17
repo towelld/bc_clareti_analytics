@@ -92,6 +92,11 @@ view: v_bluecrest_ca_ageing {
     type: sum
     sql: ${settle_amount};;
     value_format: "#,##0.00"
+    html: {% if records.sum_settle_amount._value < 0 %}
+            <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+            <font color="#000000">{{ rendered_value }}</font>
+          {% endif %} ;;
     label: "Settle Amount"
     drill_fields: [record*]
   }
@@ -100,6 +105,11 @@ view: v_bluecrest_ca_ageing {
     type: sum
     sql: ${settle_amount_usd};;
     value_format: "$#,##0.00"
+    html: {% if records.sum_settle_amount_usd._value < 0 %}
+            <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+            <font color="#000000">{{ rendered_value }}</font>
+          {% endif %} ;;
     label: "Settle Amount (USD)"
     drill_fields: [record*]
   }
